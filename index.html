@@ -10,20 +10,24 @@
 </head>
 
 <body>
-    <div class="options">
-        <h1>TIC TAC TOE</h1>
-        <h2>Play versus</h2>
-        <div class="computer">Computer</div>
-        <div class="friend">Friend</div>
-        <h2>Symbol</h2>
-        <div class="x">x</div>
-        <div class="o">o</div>
-        <div class="play">play</div>
+    <div class="container">
+        <canvas id='cvs' widht='450' height='450'></canvas>
+        <div class="options">
+            <h1>TIC TAC TOE</h1>
+            <h2>Play versus</h2>
+            <div class="computer">Computer</div>
+            <div class="friend">Friend</div>
+            <h2>Symbol</h2>
+            <div class="x">x</div>
+            <div class="o">o</div>
+            <div class="play">play</div>
+        </div>
+        <div class="gameover hide"></div>
     </div>
-    <canvas id='cvs' widht='450' height='450'></canvas>
 
+    <script src='game.js'></script>
+    <script src='options.js'></script>
 
-    <script src='scripts.js'></script>
 </body>
 
 </html>
