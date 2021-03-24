@@ -52,11 +52,11 @@ function init(player, OPPONENT) {
         let x = event.clientX - canvas.getBoundingClientRect().x;
         let y = event.clientY - canvas.getBoundingClientRect().y;
 
-        let i = Math.floor(Y / SPACE_SIZE);
-        let j = Math.floor(X / SPACE_SIZE);
+        let i = Math.floor(y / SPACE_SIZE);
+        let j = Math.floor(x / SPACE_SIZE);
 
         let id = board[i][j];
-
+        console.log(id)
         if (gameData[id]) return;
 
         gameData[id] = currentPlayer;
