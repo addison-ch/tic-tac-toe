@@ -1,7 +1,7 @@
 function init(player, OPPONENT) {
     const canvas = document.querySelector('canvas');
     const ctx = canvas.getContext('2d');
-
+    const gameOverElement = document.querySelector('.gameover')
     const COLUMN = 3;
     const ROW = 3;
 
@@ -13,7 +13,7 @@ function init(player, OPPONENT) {
     let currentPlayer = player.man;
 
     const xImage = new Image();
-    xImage.src = 'X.png'
+    xImage.src = 'x.jfif'
     const oImage = new Image();
     oImage.src = 'O.png'
 
@@ -56,11 +56,11 @@ function init(player, OPPONENT) {
         let j = Math.floor(x / SPACE_SIZE);
 
         let id = board[i][j];
-        console.log(id)
+
         if (gameData[id]) return;
 
         gameData[id] = currentPlayer;
-        drawOnBoard();
+        drawOnBoard(currentPlayer, i, j);
         if (isWinner(gameData, currentPlayer)) {
             showGameOver(currentPlayer);
             GAME_OVER = true;
@@ -110,7 +110,7 @@ function init(player, OPPONENT) {
         let imgSrc = `${player}.png`;
 
         gameOverElement.innerHTML = `
-            <h1>${message}</1>
+            <h1>${message}</h1>
             <img class="winner-img" src=${imgSrc} </img>
             <div class="play" onclick="location.reload()">Play Again!</div>
         `;
