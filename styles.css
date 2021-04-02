@@ -9,24 +9,28 @@
 #cvs{
     position: absolute;
     border: 1px solid #000;
+    border-radius: 7%;
 }
 
 .options{
     position: absolute;
     width: 450px;
     height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .options h1{
     text-align: center;
     font-size: 65px;
-    font-family: 'Fascinate Inline', cursive;
-    color: #f00;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgba(25, 190, 219, 0.973);
     margin: 30px 0 20px 0;
 }
 
 .options h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-weight: bold;
 }
@@ -36,13 +40,13 @@
 }
 
 .options .computer, .x{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 5px;
     background-color: #FFF;
     color: #000;
     font-size: 1.5em;
     border-radius: 5px;
-    margin-left: 70px;
+    margin-left: 60px;
     width: 150px;
     text-align: center;
     cursor: pointer;
@@ -50,7 +54,7 @@
 }
 
 .options .friend, .o{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 5px;
     background-color: #FFF;
     color: #000;
@@ -69,7 +73,7 @@
 }
 
 .options .play{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
     width: 70px;
     display: block;
@@ -101,13 +105,16 @@
     width: 450px;
     height: 450px;
     background-color: rgba(0, 0, 0, 0.95);
+    border: 1px solid black;
+    border-radius: 7%;
 }
 .gameover h1{
     text-align: center;
     font-size: 50px;
-    font-family: 'Fascinate Inline', cursive;
+    font-family: 'Noto Sans', sans-serif;
     color: #fff;
     margin: 40px 0 20px 0;
+    border-radius: 7%;
 }
 
 .gameover .winner-img{
@@ -116,7 +123,7 @@
 }
 
 .gameover .play{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1.5em;
     width: 150px;
     display: block;

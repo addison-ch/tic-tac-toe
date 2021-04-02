@@ -13,7 +13,7 @@ function init(player, OPPONENT) {
     let currentPlayer = player.man;
 
     const xImage = new Image();
-    xImage.src = 'x.jfif'
+    xImage.src = 'x.png'
     const oImage = new Image();
     oImage.src = 'O.png'
 
@@ -135,13 +135,13 @@ function init(player, OPPONENT) {
     }
 
     function showGameOver(player) {
-        let message = player == "tie" ? "Oops No Winner" : "The Winner is";
+        let message = player == "tie" ? "nobody won!" : "the winner is...";
         let imgSrc = `${player}.png`;
 
         gameOverElement.innerHTML = `
             <h1>${message}</h1>
             <img class="winner-img" src=${imgSrc} </img>
-            <div class="play" onclick="location.reload()">Play Again!</div>
+            <div class="play" onclick="location.reload()">run it back</div>
         `;
 
         gameOverElement.classList.remove("hide");

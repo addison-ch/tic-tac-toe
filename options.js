@@ -38,14 +38,14 @@ friendBtn.addEventListener("click", function () {
 
 playBtn.addEventListener("click", function () {
     if (!OPPONENT) {
-        computerBtn.style.backgroundColor = "red";
-        friendBtn.style.backgroundColor = "red";
+        computerBtn.style.backgroundColor = "LightCoral";
+        friendBtn.style.backgroundColor = "LightCoral";
         return;
     }
 
     if (!player.man) {
-        oBtn.style.backgroundColor = "red";
-        xBtn.style.backgroundColor = "red";
+        oBtn.style.backgroundColor = "LightCoral";
+        xBtn.style.backgroundColor = "LightCoral";
         return;
     }
 
